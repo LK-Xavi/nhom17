@@ -1,95 +1,79 @@
 ﻿@model IEnumerable<Ecommerce.Data.HangHoa>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "NhanVienOnly";
 }
 
-<h1>Index</h1>
+<h2>Chỉ Nhân Viên</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TenHh)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TenAlias)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MoTaDonVi)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DonGia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Hinh)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NgaySx)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GiamGia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SoLanXem)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MoTa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaLoaiNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaNccNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenHh)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TenAlias)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MoTaDonVi)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DonGia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Hinh)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NgaySx)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GiamGia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SoLanXem)
-            </td>
-            <td>
-                @Html.Raw(item.MoTa.Length > 100 ? item.MoTa.Substring(0, 20) + "..." : item.MoTa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaLoaiNavigation.MaLoai)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaNccNavigation.MaNcc)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MaHh">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaHh">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaHh">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
+<table>
+    <tr>
+        <td valign="top" width="200px">
+            <h3 style="text-align:center">ADMIN</h3>
+            <img style="width:180px" src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-admin-rolls-glyph-black-icon-png-image_691507.jpg" />
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="HangHoas">Hàng hóa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HoaDons">Hóa đơn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Loais">Loại</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="NhaCungCaps">Nhà cung cấp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="NhanViens">Nhân viên</a>
+                </li>
+            </ul>
+        </td>
+        <td>
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.TenHh)</th>
+                        <th>@Html.DisplayNameFor(model => model.TenAlias)</th>
+                        <th>@Html.DisplayNameFor(model => model.MoTaDonVi)</th>
+                        <th>@Html.DisplayNameFor(model => model.DonGia)</th>
+                        <th>@Html.DisplayNameFor(model => model.Hinh)</th>
+                        <th>@Html.DisplayNameFor(model => model.NgaySx)</th>
+                        <th>@Html.DisplayNameFor(model => model.GiamGia)</th>
+                        <th>@Html.DisplayNameFor(model => model.SoLanXem)</th>
+                        <th>@Html.DisplayNameFor(model => model.MoTa)</th>
+                        <th>@Html.DisplayNameFor(model => model.MaLoaiNavigation.MaLoai)</th>
+                        <th>@Html.DisplayNameFor(model => model.MaNccNavigation.MaNcc)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.TenHh)</td>
+                            <td>@Html.DisplayFor(modelItem => item.TenAlias)</td>
+                            <td>@Html.DisplayFor(modelItem => item.MoTaDonVi)</td>
+                            <td>@Html.DisplayFor(modelItem => item.DonGia)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Hinh)</td>
+                            <td>@Html.DisplayFor(modelItem => item.NgaySx)</td>
+                            <td>@Html.DisplayFor(modelItem => item.GiamGia)</td>
+                            <td>@Html.DisplayFor(modelItem => item.SoLanXem)</td>
+                            <td>@Html.Raw(item.MoTa.Length > 100 ? item.MoTa.Substring(0, 30) + "..." : item.MoTa)</td>
+                            <td>@Html.DisplayFor(modelItem => item.MaLoaiNavigation.MaLoai)</td>
+                            <td>@Html.DisplayFor(modelItem => item.MaNccNavigation.MaNcc)</td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.MaHh">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.MaHh">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.MaHh">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </td>
+    </tr>
 </table>

@@ -25,6 +25,14 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\man.jpg"
     },
     {
+      "Id": "D:\\TMDT\\Ecommerce\\Ecommerce\\wwwroot\\Hinh\\KhachHang\\pexels-cesar-perez-733745.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\pexels-cesar-perez-733745.jpg"
+    },
+    {
+      "Id": "D:\\TMDT\\Ecommerce\\Ecommerce\\wwwroot\\Hinh\\KhachHang\\raumuong.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\raumuong.jpg"
+    },
+    {
       "Id": "D:\\TMDT\\Ecommerce\\Ecommerce\\wwwroot\\Hinh\\KhachHang\\woman.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\woman.jpg"
     },

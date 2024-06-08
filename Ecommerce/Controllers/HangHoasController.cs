@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Ecommerce.Controllers
 {
+    [Authorize(Policy = "NhanVien")]
     public class HangHoasController : Controller
     {
         private readonly EshopContext _context;
@@ -61,11 +63,16 @@ namespace Ecommerce.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MaHh,TenHh,TenAlias,MaLoai,MoTaDonVi,DonGia,Hinh,NgaySx,GiamGia,SoLanXem,MoTa,MaNcc")] HangHoa hangHoa)
         {
-            if (ModelState.IsValid)
+            try
             {
                 _context.Add(hangHoa);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                // Log or inspect the exception details
+                ModelState.AddModelError("", "Unable to save changes: " + ex.Message);
             }
             ViewData["MaLoai"] = new SelectList(_context.Loais, "MaLoai", "MaLoai", hangHoa.MaLoai);
             ViewData["MaNcc"] = new SelectList(_context.NhaCungCaps, "MaNcc", "MaNcc", hangHoa.MaNcc);

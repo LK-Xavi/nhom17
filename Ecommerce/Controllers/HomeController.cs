@@ -1,4 +1,5 @@
 using Ecommerce.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -17,8 +18,16 @@ namespace Ecommerce.Controllers
         {
             return View();
         }
+
         [Route("/404")]
         public IActionResult PageNotFound()
+        {
+            return View();
+        }
+
+        // Ch? NhânViên có th? truy c?p
+        [Authorize(Roles = "NhanVien")]
+        public IActionResult NhanVienOnly()
         {
             return View();
         }
