@@ -495,3 +495,15 @@
 }
 /*** Footer End ***/
 
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+        color: #007bff;
+}

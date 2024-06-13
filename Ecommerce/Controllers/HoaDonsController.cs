@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Ecommerce.Controllers
 {
+    [Authorize(Policy = "NhanVien")]
     public class HoaDonsController : Controller
     {
         private readonly EshopContext _context;
@@ -64,9 +66,35 @@ namespace Ecommerce.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(hoaDon);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                // Kiểm tra sự tồn tại của các khóa ngoại
+                if (!_context.KhachHangs.Any(kh => kh.MaKh == hoaDon.MaKh))
+                {
+                    ModelState.AddModelError("MaKh", "Khách hàng không tồn tại.");
+                    return View(hoaDon);
+                }
+
+                if (!_context.NhanViens.Any(nv => nv.MaNv == hoaDon.MaNv))
+                {
+                    ModelState.AddModelError("MaNv", "Nhân viên không tồn tại.");
+                    return View(hoaDon);
+                }
+
+                if (!_context.TrangThais.Any(tt => tt.MaTrangThai == hoaDon.MaTrangThai))
+                {
+                    ModelState.AddModelError("MaTrangThai", "Trạng thái không tồn tại.");
+                    return View(hoaDon);
+                }
+
+                try
+                {
+                    _context.Add(hoaDon);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Không thể lưu thay đổi: " + ex.Message);
+                }
             }
             ViewData["MaKh"] = new SelectList(_context.KhachHangs, "MaKh", "MaKh", hoaDon.MaKh);
             ViewData["MaNv"] = new SelectList(_context.NhanViens, "MaNv", "MaNv", hoaDon.MaNv);

@@ -1,4 +1,5 @@
-﻿@model Ecommerce.Data.HangHoa
+﻿[Authorize(Roles = "NhanVien")]
+@model Ecommerce.Data.HangHoa
 
 @{
     ViewData["Title"] = "Details";
