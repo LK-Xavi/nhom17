@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TMDT\\Ecommerce\\Ecommerce\\Ecommerce.csproj": {}
+    "D:\\Học Đại học\\Học kì 6\\phatTrienUDTMDT\\nhom17\\Ecommerce\\Ecommerce.csproj": {}
   },
   "projects": {
-    "D:\\TMDT\\Ecommerce\\Ecommerce\\Ecommerce.csproj": {
+    "D:\\Học Đại học\\Học kì 6\\phatTrienUDTMDT\\nhom17\\Ecommerce\\Ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TMDT\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
+        "projectUniqueName": "D:\\Học Đại học\\Học kì 6\\phatTrienUDTMDT\\nhom17\\Ecommerce\\Ecommerce.csproj",
         "projectName": "Ecommerce",
-        "projectPath": "D:\\TMDT\\Ecommerce\\Ecommerce\\Ecommerce.csproj",
-        "packagesPath": "C:\\Users\\Xavi0\\.nuget\\packages\\",
-        "outputPath": "D:\\TMDT\\Ecommerce\\Ecommerce\\obj\\",
+        "projectPath": "D:\\Học Đại học\\Học kì 6\\phatTrienUDTMDT\\nhom17\\Ecommerce\\Ecommerce.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Học Đại học\\Học kì 6\\phatTrienUDTMDT\\nhom17\\Ecommerce\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xavi0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
