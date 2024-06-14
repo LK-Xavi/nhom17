@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Update.Internal;
+using System;
 using System.Collections.Generic;
 
 namespace Ecommerce.Data;
@@ -23,7 +24,10 @@ public partial class HangHoa
 
     public double GiamGia { get; set; }
 
+    
     public int SoLanXem { get; set; }
+
+    public int SoLuotMua {  get; set; }
 
     public string? MoTa { get; set; }
 

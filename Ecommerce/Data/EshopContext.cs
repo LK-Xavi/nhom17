@@ -157,6 +157,8 @@ public partial class EshopContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("MaNCC");
             entity.Property(e => e.MoTaDonVi).HasMaxLength(50);
+            entity.Property(e => e.SoLuotMua);
+            entity.Property(e => e.SoLanXem);
             entity.Property(e => e.NgaySx)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")

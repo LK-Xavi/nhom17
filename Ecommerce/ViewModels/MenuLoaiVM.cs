@@ -6,5 +6,7 @@
         public string TenLoai { get; set; }
 
         public int SoLuong {  get; set; }
+
+        public string TenLoaiAlias { get; set; }
     }
 }
