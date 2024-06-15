@@ -23,11 +23,10 @@
 <div class="top-viewed mt-5">
     <h2>Sản phẩm được xem nhiều nhất</h2>
     <div class="row">
-        @{
-            Html.RenderAction("TopViewedPartial", "HangHoa");
-        }
+        @Html.ActionLink("Xem sản phẩm được xem nhiều nhất", "TopViewedPartial", "HangHoa")
     </div>
 </div>
+
 
 
 
