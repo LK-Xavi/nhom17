@@ -32,7 +32,11 @@
                 <td>@Html.DisplayFor(modelItem => item.TenAlias)</td>
                 <td>@Html.DisplayFor(modelItem => item.MoTaDonVi)</td>
                 <td>@Html.DisplayFor(modelItem => item.DonGia)</td>
-                <td>@Html.DisplayFor(modelItem => item.Hinh)</td>
+                @* <td>@Html.DisplayFor(modelItem => item.Hinh)</td> *@
+                <td>
+                    <img src="~/Hinh/HangHoa/@item.Hinh" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="@item.Hinh">
+                 </td>
+
                 <td>@Html.DisplayFor(modelItem => item.NgaySx)</td>
                 <td>@Html.DisplayFor(modelItem => item.GiamGia)</td>
                 <td>@Html.DisplayFor(modelItem => item.SoLanXem)</td>
@@ -40,9 +44,20 @@
                 <td>@Html.DisplayFor(modelItem => item.MaLoaiNavigation.MaLoai)</td>
                 <td>@Html.DisplayFor(modelItem => item.MaNccNavigation.MaNcc)</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.MaHh">Edit</a> |
+                    @* <a asp-action="Edit" asp-route-id="@item.MaHh">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.MaHh">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.MaHh">Delete</a>
+                    <a asp-action="Delete" asp-route-id="@item.MaHh">Delete</a> *@
+                    <form asp-action="Edit" asp-route-id="@item.MaHh" method="get" style="display:inline;">
+                        <button type="submit">Edit</button>
+                    </form>
+                    |
+                    <form asp-action="Details" asp-route-id="@item.MaHh" method="get" style="display:inline;">
+                        <button type="submit">Details</button>
+                    </form>
+                    |
+                    <form asp-action="Delete" asp-route-id="@item.MaHh" method="post" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
                 </td>
             </tr>
         }
