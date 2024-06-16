@@ -26,6 +26,7 @@ public partial class HoaDon
     public double PhiVanChuyen { get; set; }
 
     public int MaTrangThai { get; set; }
+    public int MaCt {  get; set; }  
 
     public string? MaNv { get; set; }
 

@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.Data;
 using Microsoft.AspNetCore.Authorization;
+using Azure;
+using Ecommerce.ViewModels;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 
 namespace Ecommerce.Controllers
 {
@@ -20,6 +23,81 @@ namespace Ecommerce.Controllers
             _context = context;
         }
 
+        // Thống kê theo ngày
+        public ActionResult ByDay(DateTime date)
+        {
+            var orders = _context.HoaDons.Where(h => h.NgayDat == date).Select(h => new Billdetail
+            {
+                MaHd = h.MaHd,
+                NgayDat = h.NgayDat,
+                HoTen = h.HoTen,
+                DiaChi = h.DiaChi,
+                PhiVanChuyen = h.PhiVanChuyen,
+                CachThanhToan = h.CachThanhToan,
+                CachVanChuyen = h.CachVanChuyen,
+                SoLuong = ViewModels.Billdetail.getSoLuongfromHD(h.MaCt,_context),
+                DonGia = ViewModels.Billdetail.getDonGiafromHD(h.MaCt,_context),
+                TrangThai = ViewModels.Billdetail.convertMaTrangThaitoTrangThai(h.MaTrangThai),
+            }).ToList();
+            
+            var orderCount = orders.Count();
+
+            ViewBag.Date = date;
+            ViewBag.OrderCount = orderCount;
+           
+    
+            return View(orders);
+        }
+
+        // Thống kê theo tháng
+        public ActionResult ByMonth(int month, int year)
+        {
+            var orders = _context.HoaDons.Where(h => h.NgayDat.Month == month && h.NgayDat.Year == year).Select(h => new Billdetail
+            {
+                MaHd = h.MaHd,
+                NgayDat = h.NgayDat,
+                HoTen = h.HoTen,
+                DiaChi = h.DiaChi,
+                PhiVanChuyen = h.PhiVanChuyen,
+                CachThanhToan = h.CachThanhToan,
+                CachVanChuyen = h.CachVanChuyen,
+                SoLuong = ViewModels.Billdetail.getSoLuongfromHD(h.MaCt, _context),
+                DonGia = ViewModels.Billdetail.getDonGiafromHD(h.MaCt, _context),
+                TrangThai = ViewModels.Billdetail.convertMaTrangThaitoTrangThai(h.MaTrangThai),
+            }).ToList();
+            var orderCount = orders.Count();
+
+            ViewBag.Month = month;
+            ViewBag.Year = year;
+            ViewBag.OrderCount = orderCount;
+
+            return View(orders);
+        }
+
+        // Thống kê theo năm
+        public ActionResult ByYear(int year)
+        {
+            var orders = _context.HoaDons.Where(h => h.NgayDat.Year == year).Select(h => new Billdetail
+            {
+                MaHd = h.MaHd,
+                NgayDat = h.NgayDat,
+                HoTen = h.HoTen,
+                DiaChi = h.DiaChi,
+                PhiVanChuyen = h.PhiVanChuyen,
+                CachThanhToan = h.CachThanhToan,
+                CachVanChuyen = h.CachVanChuyen,
+                SoLuong = ViewModels.Billdetail.getSoLuongfromHD(h.MaCt, _context),
+                DonGia = ViewModels.Billdetail.getDonGiafromHD(h.MaCt, _context),
+                TrangThai = ViewModels.Billdetail.convertMaTrangThaitoTrangThai(h.MaTrangThai),
+            }).ToList();
+            var orderCount = orders.Count();
+
+            ViewBag.Year = year;
+            ViewBag.OrderCount = orderCount;
+            
+
+            return View(orders);
+        }
         // GET: HoaDons
         public async Task<IActionResult> Index()
         {

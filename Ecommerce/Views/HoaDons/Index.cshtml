@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdminHangHoas.cshtml";
+
 }
 
 <h1>Index</h1>
@@ -9,6 +11,27 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<h2>Chọn khoảng thời gian để xem thống kê</h2>
+
+<form action="@Url.Action("ByDay", "HoaDons")" method="get">
+    <label for="date">Ngày:</label>
+    <input type="date" id="date" name="date">
+    <button type="submit">Xem</button>
+</form>
+
+<form action="@Url.Action("ByMonth", "HoaDons")" method="get">
+    <label for="month">Tháng:</label>
+    <input type="number" id="month" name="month" min="1" max="12">
+    <label for="year">Năm:</label>
+    <input type="number" id="year" name="year" min="2000" max="2100">
+    <button type="submit">Xem</button>
+</form>
+
+<form action="@Url.Action("ByYear", "HoaDons")" method="get">
+    <label for="year">Năm:</label>
+    <input type="number" id="year" name="year" min="2000" max="2100">
+    <button type="submit">Xem</button>
+</form>
 <table class="table">
     <thead>
         <tr>

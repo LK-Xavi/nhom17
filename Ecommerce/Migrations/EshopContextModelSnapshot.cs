@@ -203,6 +203,9 @@ namespace Ecommerce.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("MaCT")
+                        .HasColumnType("int");
+
                     b.Property<int>("MaLoai")
                         .HasColumnType("int");
 
@@ -226,6 +229,9 @@ namespace Ecommerce.Migrations
                         .HasDefaultValueSql("(getdate())");
 
                     b.Property<int>("SoLanXem")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SoLuotMua")
                         .HasColumnType("int");
 
                     b.Property<string>("TenAlias")
