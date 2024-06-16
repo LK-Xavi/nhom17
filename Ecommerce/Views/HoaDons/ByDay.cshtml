@@ -7,6 +7,7 @@
 }
 <h2>Thống kê đơn hàng cho ngày: @ViewBag.Date.ToShortDateString()</h2>
 <p>Tổng số lượng đơn hàng: @ViewBag.OrderCount</p>
+<h3>Tổng doanh thu : @Model.Sum(price => price.ThanhTien).ToString("C")</h3>
 <table class="table">
     <thead>
         <tr>
@@ -18,6 +19,11 @@
             <th>Cách thanh toán</th>
             <th>Cách vận chuyển</th>
             <th>Trạng thái</th>
+            <th>Số lượng </th>
+            <th>Đơn giá </th>
+            <th>Thành tiền </th>
+
+
         </tr>
     </thead>
     <tbody>
@@ -32,6 +38,10 @@
                 <td>@order.CachThanhToan</td>
                 <td>@order.CachVanChuyen</td>
                 <td>@order.TrangThai</td>
+                <td>@order.SoLuong</td>
+                <td>@order.DonGia</td>
+                <td>@order.ThanhTien</td>
+
             </tr>
         }
     </tbody>

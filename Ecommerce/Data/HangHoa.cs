@@ -32,6 +32,7 @@ public partial class HangHoa
     public string? MoTa { get; set; }
 
     public string MaNcc { get; set; } = null!;
+    
 
     public virtual ICollection<BanBe> BanBes { get; set; } = new List<BanBe>();
 

@@ -9,6 +9,7 @@ using Ecommerce.Data;
 using Microsoft.AspNetCore.Authorization;
 using Azure;
 using Ecommerce.ViewModels;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 
 namespace Ecommerce.Controllers
 {
@@ -21,6 +22,7 @@ namespace Ecommerce.Controllers
         {
             _context = context;
         }
+
         // Thống kê theo ngày
         public ActionResult ByDay(DateTime date)
         {
@@ -33,6 +35,8 @@ namespace Ecommerce.Controllers
                 PhiVanChuyen = h.PhiVanChuyen,
                 CachThanhToan = h.CachThanhToan,
                 CachVanChuyen = h.CachVanChuyen,
+                SoLuong = ViewModels.Billdetail.getSoLuongfromHD(h.MaCt,_context),
+                DonGia = ViewModels.Billdetail.getDonGiafromHD(h.MaCt,_context),
                 TrangThai = ViewModels.Billdetail.convertMaTrangThaitoTrangThai(h.MaTrangThai),
             }).ToList();
             
@@ -57,6 +61,8 @@ namespace Ecommerce.Controllers
                 PhiVanChuyen = h.PhiVanChuyen,
                 CachThanhToan = h.CachThanhToan,
                 CachVanChuyen = h.CachVanChuyen,
+                SoLuong = ViewModels.Billdetail.getSoLuongfromHD(h.MaCt, _context),
+                DonGia = ViewModels.Billdetail.getDonGiafromHD(h.MaCt, _context),
                 TrangThai = ViewModels.Billdetail.convertMaTrangThaitoTrangThai(h.MaTrangThai),
             }).ToList();
             var orderCount = orders.Count();
@@ -80,6 +86,8 @@ namespace Ecommerce.Controllers
                 PhiVanChuyen = h.PhiVanChuyen,
                 CachThanhToan = h.CachThanhToan,
                 CachVanChuyen = h.CachVanChuyen,
+                SoLuong = ViewModels.Billdetail.getSoLuongfromHD(h.MaCt, _context),
+                DonGia = ViewModels.Billdetail.getDonGiafromHD(h.MaCt, _context),
                 TrangThai = ViewModels.Billdetail.convertMaTrangThaitoTrangThai(h.MaTrangThai),
             }).ToList();
             var orderCount = orders.Count();
