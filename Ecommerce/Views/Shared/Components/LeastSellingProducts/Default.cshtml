@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Ecommerce.Data.HangHoa>
+
+
+<h3>Top 3 Sản Phẩm có lượt mua thấp</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên Hàng Hóa</th>
+            <th>MoTaDonVi</th>
+            <th>DonGia</th>
+            <th>Hinh Minh Họa</th>
+            <th>NgaySx</th>
+            <th>GiamGia</th>
+            <th>SoLuotMua</th>
+            <th>MoTa</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.TenHh)</td>
+                <td>@Html.DisplayFor(modelItem => item.MoTa)</td>
+                <td>@Html.DisplayFor(modelItem => item.DonGia)</td>               
+                <td>
+                    <img src="~/Hinh/HangHoa/@item.Hinh" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="@item.Hinh">
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.NgaySx)</td>
+
+                <td>@Html.DisplayFor(modelItem => item.GiamGia)</td>
+                <td>@Html.DisplayFor(modelItem => item.SoLuotMua)</td>
+                <td>@Html.Raw(item.MoTa)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MaHh">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.MaHh">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaHh">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -17,223 +17,279 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ecommerce
 build_property.RootNamespace = Ecommerce
-build_property.ProjectDir = D:\TMDT\nhom17-master\Ecommerce\
+build_property.ProjectDir = C:\Users\Xavi0\Videos\nhom17-master\Ecommerce\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\TMDT\nhom17-master\Ecommerce
+build_property.MSBuildProjectDirectory = C:\Users\Xavi0\Videos\nhom17-master\Ecommerce
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Cart/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoas/Create.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Cart/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoas/Delete.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoas/Details.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoas/Edit.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoas/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoa/Detail.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoas/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYXNcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoa/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoa/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoa/ProductItem.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoa/ProductItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxQcm9kdWN0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoa/Search.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HangHoa/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HangHoa/_TopViewedPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxfVG9wVmlld2VkUGFydGlhbC5jc2h0bWw=
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/ByDay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xCeURheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HoaDons/Create.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/ByMonth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xCeU1vbnRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/ByYear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xCeVllYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HoaDons/Delete.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HoaDons/Details.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HoaDons/Edit.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/HoaDons/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/HoaDons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Home/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Home/PageNotFound.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Home/PageNotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdlTm90Rm91bmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Home/Privacy.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHangs/Create.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHangs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHangs/Delete.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHangs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHangs/Details.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHangs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHangs/Edit.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHangs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHangs/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHangs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHang/DangKy.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHang/DangKy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdLeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHang/DangNhap.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHang/DangNhap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdOaGFwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/KhachHang/Profile.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/KhachHang/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Loais/Create.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Loais/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Loais/Delete.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Loais/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Loais/Details.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Loais/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Loais/Edit.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Loais/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Loais/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Loais/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhaCungCaps/Create.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhaCungCaps/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhaCungCaps/Delete.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhaCungCaps/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhaCungCaps/Details.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhaCungCaps/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhaCungCaps/Edit.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhaCungCaps/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhaCungCaps/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhaCungCaps/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhQ3VuZ0NhcHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhanViens/Create.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhanViens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhanViens/Delete.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhanViens/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhanViens/Details.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhanViens/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhanViens/Edit.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhanViens/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/NhanViens/Index.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/NhanViens/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/Components/Cart/CartPanel.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/Cart/CartPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0UGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/Components/MenuLoai/Default.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/LatestProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGF0ZXN0UHJvZHVjdHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/LeastSellingProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGVhc3RTZWxsaW5nUHJvZHVjdHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/list/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcbGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/MenuLoai/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/Error.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/SearchByPrice/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VhcmNoQnlQcmljZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/Top5SellingProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wNVNlbGxpbmdQcm9kdWN0c1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/TopSellingProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wU2VsbGluZ1Byb2R1Y3RzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/TopViewedProducts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wVmlld2VkUHJvZHVjdHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Components/TopViewedProducts/_DanhSachHangHoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wVmlld2VkUHJvZHVjdHNcX0RhbmhTYWNoSGFuZ0hvYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/_DanhSachHangHoa.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYW5oU2FjaEhhbmdIb2EuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/_Footer.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/_LayoutCustomer.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/_LayoutAdminHangHoas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbkhhbmdIb2FzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/_LayoutCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/_TimKiemPanel.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/_TimKiemPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UaW1LaWVtUGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/_ViewImports.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/_ViewStart.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TMDT/nhom17-master/Ecommerce/Views/Shared/_Layout.cshtml]
+[C:/Users/Xavi0/Videos/nhom17-master/Ecommerce/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jnmo08unka

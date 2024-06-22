@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Ecommerce.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Data;
@@ -51,6 +52,8 @@ public partial class EshopContext : DbContext
 
     public virtual DbSet<YeuThich> YeuThiches { get; set; }
 
+    public virtual DbSet<CartItem> CartItems { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<BanBe>(entity =>
@@ -98,6 +101,31 @@ public partial class EshopContext : DbContext
                 .HasForeignKey(d => d.MaHh)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_OrderDetails_Products");
+        });
+        modelBuilder.Entity<CartItem>(entity =>
+        {
+            entity.HasKey(e => e.MaGioHang);
+
+            entity.ToTable("CartItem");
+
+            entity.Property(e => e.MaGioHang).HasColumnName("MaGioHang");
+            entity.Property(e => e.MaKh)
+                .HasMaxLength(20)
+                .HasColumnName("MaKH");
+            entity.Property(e => e.MaHh)
+                .HasColumnName("MaHH");
+            entity.Property(e => e.Hinh).HasMaxLength(50);
+            entity.Property(e => e.TenHH).HasMaxLength(50);
+            entity.Property(e => e.DonGia).HasDefaultValue(18.0);
+            entity.Property(e => e.SoLuong);
+            entity.HasOne(d => d.MaKhNavigation).WithMany(p => p.CartItems)
+                .HasForeignKey(d => d.MaKh)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_CartItem_KhachHang");
+            entity.HasOne(d => d.MaHhNavigation).WithMany(p => p.CartItems)
+                .HasForeignKey(d => d.MaHh)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_CartItem_HangHoa");
         });
 
         modelBuilder.Entity<ChuDe>(entity =>

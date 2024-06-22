@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Ecommerce.ViewModels.HangHoaVM>
+
+<div>
+    <form asp-action="SearchByPrice" method="get">
+        <label for="minPrice">Giá tối thiểu:</label>
+        <input type="number" id="minPrice" name="minPrice" step="0.01" />
+
+        <label for="maxPrice">Giá tối đa:</label>
+        <input type="number" id="maxPrice" name="maxPrice" step="0.01" />
+
+        <button type="submit">Tìm kiếm</button>
+    </form>
+</div>
+
+<div>
+    @foreach (var item in Model)
+    {
+        <div>
+            <h3>@item.TenHH</h3>
+            <p>Giá: @item.DonGia</p>
+            <img src="@item.Hinh" alt="@item.TenHH" />
+            <p>@item.MoTaNgan</p>
+        </div>
+    }
+</div>

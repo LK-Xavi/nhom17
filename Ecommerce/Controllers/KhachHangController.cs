@@ -93,7 +93,7 @@ namespace Ecommerce.Controllers
             {
                 new Claim(ClaimTypes.Email, khachHang.Email),
                 new Claim(ClaimTypes.Name, khachHang.HoTen),
-                new Claim("CustomerID", khachHang.MaKh),
+                new Claim(MySetting.CLAIM_CUSTOMERID, khachHang.MaKh),
                 new Claim(ClaimTypes.Role, "KhachHang") // Đặt vai trò là KhachHang
             };
 
@@ -139,14 +139,7 @@ namespace Ecommerce.Controllers
 
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
 
-                    if (Url.IsLocalUrl(ReturnUrl))
-                    {
-                        return Redirect(ReturnUrl);
-                    }
-                    else
-                    {
-                        return Redirect("/");
-                    }
+                    return RedirectToAction("Index", "HangHoas"); // Chuyển hướng đến trang HangHoas/Index cho Nhân viên
                 }
 
                 // Nếu không tìm thấy người dùng trong cả hai bảng

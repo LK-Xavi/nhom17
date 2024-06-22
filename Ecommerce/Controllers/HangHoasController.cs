@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.Data;
 using Microsoft.AspNetCore.Authorization;
+using X.PagedList;
 
 namespace Ecommerce.Controllers
 {
@@ -21,10 +22,13 @@ namespace Ecommerce.Controllers
         }
 
         // GET: HangHoas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
+            int pageNumber = page ?? 1;
+            int pageSize = 10;
             var eshopContext = _context.HangHoas.Include(h => h.MaLoaiNavigation).Include(h => h.MaNccNavigation);
-            return View(await eshopContext.ToListAsync());
+            var pageList = await eshopContext.ToPagedListAsync(pageNumber, pageSize);
+            return View(pageList);
         }
 
         // GET: HangHoas/Details/5
@@ -169,5 +173,29 @@ namespace Ecommerce.Controllers
         {
             return _context.HangHoas.Any(e => e.MaHh == id);
         }
+
+        // GET: HangHoas/Search
+        public async Task<IActionResult> Search(string searchString)
+        {
+            if (string.IsNullOrEmpty(searchString))
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Tìm kiếm sản phẩm theo tên
+            var hangHoas = await _context.HangHoas
+                .Include(h => h.MaLoaiNavigation)
+                .Include(h => h.MaNccNavigation)
+                .Where(h => h.TenHh.Contains(searchString))
+                .ToListAsync();
+
+            if (hangHoas == null || hangHoas.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return View(hangHoas);
+        }
+
     }
 }

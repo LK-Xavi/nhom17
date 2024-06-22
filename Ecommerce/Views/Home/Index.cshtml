@@ -8,3 +8,25 @@
     ViewData["Title"] = "Index";
     Layout = "_DanhSachHangHoa";
 }
+
+<!-- Hiển thị sản phẩm có lượt xem nhiều nhất -->
+<div class="top-viewed mt-5">
+    <h2>Sản phẩm được xem nhiều nhất</h2>
+    <div class="row">
+        @await Component.InvokeAsync("TopViewedProducts")
+    </div>
+</div>
+
+<div class="top-viewed mt-5">
+    <h2>Sản Phẩm mới</h2>
+    <div class="row">
+        @await Component.InvokeAsync("LatestProducts")
+    </div>
+</div>
+
+<div class="top-viewed mt-5">
+    <h2>Sản phẩm được mua nhiều nhất</h2>
+    <div class="row">
+        @await Component.InvokeAsync("TopSellingProducts")
+    </div>
+</div>

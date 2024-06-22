@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TMDT\\nhom17-master\\Ecommerce\\Ecommerce.csproj": {}
+    "C:\\Users\\Xavi0\\Videos\\nhom17-master\\Ecommerce\\Ecommerce.csproj": {}
   },
   "projects": {
-    "D:\\TMDT\\nhom17-master\\Ecommerce\\Ecommerce.csproj": {
+    "C:\\Users\\Xavi0\\Videos\\nhom17-master\\Ecommerce\\Ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TMDT\\nhom17-master\\Ecommerce\\Ecommerce.csproj",
+        "projectUniqueName": "C:\\Users\\Xavi0\\Videos\\nhom17-master\\Ecommerce\\Ecommerce.csproj",
         "projectName": "Ecommerce",
-        "projectPath": "D:\\TMDT\\nhom17-master\\Ecommerce\\Ecommerce.csproj",
+        "projectPath": "C:\\Users\\Xavi0\\Videos\\nhom17-master\\Ecommerce\\Ecommerce.csproj",
         "packagesPath": "C:\\Users\\Xavi0\\.nuget\\packages\\",
-        "outputPath": "D:\\TMDT\\nhom17-master\\Ecommerce\\obj\\",
+        "outputPath": "C:\\Users\\Xavi0\\Videos\\nhom17-master\\Ecommerce\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,6 +70,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[9.1.2, )"
             }
           },
           "imports": [

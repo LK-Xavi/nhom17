@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Update.Internal;
+﻿using Ecommerce.ViewModels;
+using Microsoft.EntityFrameworkCore.Update.Internal;
 using System;
 using System.Collections.Generic;
-
+using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Ecommerce.Data;
 
 public partial class HangHoa
@@ -19,7 +21,6 @@ public partial class HangHoa
     public double? DonGia { get; set; }
 
     public string? Hinh { get; set; }
-
     public DateTime NgaySx { get; set; }
 
     public double GiamGia { get; set; }
@@ -42,4 +43,5 @@ public partial class HangHoa
     public virtual NhaCungCap MaNccNavigation { get; set; } = null!;
 
     public virtual ICollection<YeuThich> YeuThiches { get; set; } = new List<YeuThich>();
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 }

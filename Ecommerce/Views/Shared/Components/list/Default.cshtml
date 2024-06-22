@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Ecommerce.ViewModels.HangHoaVM>
+
+    
+<div>
+    @foreach (var item in Model)
+    {
+        <div>
+            <h3>@item.TenHH</h3>
+            
+            <img src="@item.Hinh" alt="@item.TenHH" />
+            
+        </div>
+    }
+</div>

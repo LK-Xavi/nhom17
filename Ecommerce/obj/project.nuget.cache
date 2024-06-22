@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E59sf64nXxf3zs8X8x4lGHAeLuNi+NTgDyPtW8UGN8ZMSQo3y5PKCo7eXMBGZxf4DTyeLuEmEnG4Nj0ywRJQUw==",
+  "dgSpecHash": "RPZMIhRvqrfHYtqrcit0b0CRE9TGGZBbPkCskjvyzCpDhWLbmuAxdrB4T44vTYNpY/Tb+WDoWwX6c2maC4QcGQ==",
   "success": true,
-  "projectFilePath": "D:\\TMDT\\nhom17-master\\Ecommerce\\Ecommerce.csproj",
+  "projectFilePath": "C:\\Users\\Xavi0\\Videos\\nhom17-master\\Ecommerce\\Ecommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Xavi0\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Xavi0\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -164,7 +164,9 @@
     "C:\\Users\\Xavi0\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\Xavi0\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "C:\\Users\\Xavi0\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Xavi0\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+    "C:\\Users\\Xavi0\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Xavi0\\.nuget\\packages\\x.pagedlist\\9.1.2\\x.pagedlist.9.1.2.nupkg.sha512",
+    "C:\\Users\\Xavi0\\.nuget\\packages\\x.pagedlist.mvc.core\\9.1.2\\x.pagedlist.mvc.core.9.1.2.nupkg.sha512"
   ],
   "logs": []
 }

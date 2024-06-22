@@ -1,10 +1,10 @@
-﻿[Authorize(Roles = "NhanVien")]
+﻿
 @model Ecommerce.Data.HangHoa
 
 @{
     ViewData["Title"] = "Edit";
 }
-
+<div class="container">
 <h1>Edit</h1>
 
 <h4>HangHoa</h4>
@@ -79,7 +79,10 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
+</div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+               

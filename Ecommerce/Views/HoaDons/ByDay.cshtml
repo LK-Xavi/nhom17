@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Ecommerce.ViewModels.Billdetail>
+
+@{
+    ViewData["Title"] = "Thống kế đơn hàng theo ngày";
+    Layout = "~/Views/Shared/_LayoutAdminHangHoas.cshtml";
+
+}
+<h2>Thống kê đơn hàng cho ngày: @ViewBag.Date.ToShortDateString()</h2>
+<p>Tổng số lượng đơn hàng: @ViewBag.OrderCount</p>
+<h3>Tổng doanh thu : @Model.Sum(price => price.ThanhTien).ToString("C")</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã HĐ</th>
+            <th>Ngày đặt</th>
+            <th>Họ tên</th>
+            <th>Địa chỉ</th>
+            <th>Phí vận chuyển</th>
+            <th>Cách thanh toán</th>
+            <th>Cách vận chuyển</th>
+            <th>Trạng thái</th>
+            <th>Số lượng </th>
+            <th>Đơn giá </th>
+            <th>Thành tiền </th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.MaHd</td>
+                <td>@order.NgayDat.ToShortDateString()</td>
+                <td>@order.HoTen</td>
+                <td>@order.DiaChi</td>
+                <td>@order.PhiVanChuyen</td>
+                <td>@order.CachThanhToan</td>
+                <td>@order.CachVanChuyen</td>
+                <td>@order.TrangThai</td>
+                <td>@order.SoLuong</td>
+                <td>@order.DonGia</td>
+                <td>@order.ThanhTien</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

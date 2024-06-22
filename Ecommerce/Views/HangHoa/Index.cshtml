@@ -1,5 +1,6 @@
-﻿@model IEnumerable<Ecommerce.ViewModels.HangHoaVM>
-
+﻿@model IPagedList<Ecommerce.ViewModels.HangHoaVM>
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
 @{
     ViewData["Title"] = "Index";
     Layout = "_DanhSachHangHoa";
@@ -7,40 +8,60 @@
 
 <!-- Single Page Header start -->
 @section BreadCum {
-<div class="container-fluid page-header py-5">
-    <h1 class="text-center text-white display-6">Shop</h1>
-    <ol class="breadcrumb justify-content-center mb-0">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-        <li class="breadcrumb-item active text-white">Shop</li>
-    </ol>
-</div>
+    <div class="container-fluid page-header py-5">
+        <h1 class="text-center text-white display-6">Shop</h1>
+        <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+            <li class="breadcrumb-item active text-white">Shop</li>
+        </ol>
+    </div>
 }
-<!-- Single Page Header End -->
-@await Html.PartialAsync("ProductItem", Model)
 
-<!--HIển thị sản phẩm có lượt xem nhiều nhất-->
-<div class="top-viewed mt-5">
-    <h2>Sản phẩm được xem nhiều nhất</h2>
-    <div class="row">
-        @{
-            Html.RenderAction("TopViewedPartial", "HangHoa");
-        }
-    </div>
+
+
+<h6>Có @Model.TotalItemCount sản phẩm</h6>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="rounded position-relative fruite-item">
+                <div class="fruite-img">
+                    <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHh">
+                        <img src="~/Hinh/HangHoa/@item.Hinh" class="img-fluid w-100 rounded-top" alt="@item.TenHH">
+                    </a>
+                </div>
+                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@item.TenLoai</div>
+                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                    <a asp-action="Detail" asp-controller="HangHoa" asp-route-id="@item.MaHh">
+                        <h4>@item.TenHH</h4>
+                    </a>
+                    <p>@item.MoTaNgan</p>
+                    <div class="d-flex justify-content-between flex-lg-wrap">
+                        <p class="text-dark fs-5 fw-bold mb-0">@item.DonGia.ToString("C")</p>
+                        <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHh" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Giỏ Hàng </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
 </div>
+@await Component.InvokeAsync("list")
+<!-- Hiển thị phân trang -->
+@{
+    var pagedListRenderOptions = new PagedListRenderOptions
+            {
+                UlElementClasses = new[] { "pagination" },
+                LiElementClasses = new[] { "page-item" },
+                PageClasses = new[] { "page-link", "rounded" },
+                ActiveLiElementClass = "active",
+                PreviousElementClass = "page-item",
+                NextElementClass = "page-item",
+            };
 
-
-
-<div class="col-12">
-    <div class="pagination d-flex justify-content-center mt-5">
-        <a href="#" class="rounded">&laquo;</a>
-        <a href="#" class="active rounded">1</a>
-        <a href="#" class="rounded">2</a>
-        <a href="#" class="rounded">3</a>
-        <a href="#" class="rounded">4</a>
-        <a href="#" class="rounded">5</a>
-        <a href="#" class="rounded">6</a>
-        <a href="#" class="rounded">&raquo;</a>
+    <div class="col-12">
+        <div class="pagination d-flex justify-content-center mt-5">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), pagedListRenderOptions)
+        </div>
     </div>
-</div>
-<!-- Fruits Shop End-->
+}

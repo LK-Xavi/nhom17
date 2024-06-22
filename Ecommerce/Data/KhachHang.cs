@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ecommerce.ViewModels;
+using System;
 using System.Collections.Generic;
 
 namespace Ecommerce.Data;
@@ -34,4 +35,6 @@ public partial class KhachHang
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 
     public virtual ICollection<YeuThich> YeuThiches { get; set; } = new List<YeuThich>();
+
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 }

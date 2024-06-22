@@ -1,5 +1,7 @@
 ﻿namespace Ecommerce.ViewModels
+
 {
+    
     public class HangHoaVM
     {
         public int MaHh { get; set; }
@@ -14,7 +16,15 @@
 
         public string TenLoai { get; set;}
 
-        public string NgaySX { get; set;}   
+        public double GiamGia { get; set; }
+
+
+        public int SoLanXem { get; set; }
+        public int SoLuotMua { get; set; }
+        public string? MoTa { get; set; }
+        public string MaNcc { get; set; } 
+        public string NgaySX { get; set;}
+        public int MaLoai { get; set; }
     }
 
 

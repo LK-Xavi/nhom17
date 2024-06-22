@@ -2,6 +2,8 @@
 using Ecommerce.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Printing;
+using X.PagedList;
 
 namespace Ecommerce.Controllers
 {
@@ -9,25 +11,35 @@ namespace Ecommerce.Controllers
     {
         private readonly EshopContext db;
 
-        public HangHoaController(EshopContext context) {
+        public HangHoaController(EshopContext context)
+        {
             db = context;
 
         }
-        public IActionResult Index(int? loai)
+        public IActionResult Index(int? loai, int? page)
+
         {
             var hangHoas = db.HangHoas.AsQueryable();
             if (loai.HasValue)
             {
                 hangHoas = hangHoas.Where(p => p.MaLoai == loai.Value);
             }
-            var result = hangHoas.Select(p => new HangHoaVM{
+
+            int pageSize = 15;
+
+
+            int pageNumber = (page ?? 1);
+
+
+            var result = hangHoas.Select(p => new HangHoaVM
+            {
                 MaHh = p.MaHh,
                 TenHH = p.TenHh,
                 DonGia = p.DonGia ?? 0,
                 Hinh = p.Hinh ?? "",
-                MoTaNgan = p.MoTaDonVi ?? "" ,
+                MoTaNgan = p.MoTaDonVi ?? "",
                 TenLoai = p.MaLoaiNavigation.TenLoai
-            });
+            }).ToPagedList(pageNumber, pageSize);
             return View(result);
         }
         public IActionResult Search(string? query)
@@ -49,6 +61,9 @@ namespace Ecommerce.Controllers
             return View(result);
 
         }
+     
+
+
         public IActionResult Detail(int id)
         {
             var data = db.HangHoas
@@ -95,22 +110,12 @@ namespace Ecommerce.Controllers
             return View(result);
         }
 
-        public IActionResult TopViewedPartial()
-        {
-            var hangHoas = db.HangHoas
-                .OrderByDescending(p => p.SoLanXem) // Xắp xếp theo số lượt xem giảm dần
-                .Take(10) // Giới hạn sản phẩm là 10 sản phẩm
-                .Select(p => new HangHoaVM
-                {
-                    MaHh = p.MaHh,
-                    TenHH = p.TenHh,
-                    DonGia = p.DonGia ?? 0,
-                    Hinh = p.Hinh ?? "",
-                    MoTaNgan = p.MoTaDonVi ?? "",
-                    TenLoai = p.MaLoaiNavigation.TenLoai
-                });
-            return PartialView("_TopViewedPartial", hangHoas);
-        }
+
+        // Thêm phương thức tìm kiếm theo khoảng giá
+
+
+
+
 
     }
 }

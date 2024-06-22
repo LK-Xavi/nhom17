@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<Ecommerce.Data.NhaCungCap>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "NhanVien";
+    Layout = "~/Views/Shared/_LayoutAdminHangHoas.cshtml";
 }
 
 <h1>Index</h1>
@@ -43,7 +44,8 @@
                 @Html.DisplayFor(modelItem => item.TenCongTy)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Logo)
+                    <img src="~/Hinh/NhaCC/@item.Logo" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="@item.Logo">
+             
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NguoiLienLac)
